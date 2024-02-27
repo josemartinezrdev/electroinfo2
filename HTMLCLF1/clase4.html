@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="stylesheet" href="../CSS/css/all.min.css" />
+		<link rel="stylesheet" href="../CSSCLF1/clase4.css" />
+		<title>Clase 4</title>
+	</head>
+	<body>
+		<div class="padre">
+			<header class="header">
+				<div class="menu margen-interno">
+					<div class="logo">
+						<a href="../ElectroInfo.html">ElectroInfo</a>
+					</div>
+					<nav class="nav">
+						<a href="../ElectroInfo.html"
+							><i class="fa-solid fa-house-chimney"></i
+							><span class="off"> Inicio</span></a
+						>
+						<a href="../clases.html"
+							><i class="fa-solid fa-robot"></i
+							><span class="off"> Clases</span></a
+						>
+						<a href="../construccion.html"
+							><i class="fa-solid fa-people-group"></i
+							><span class="off"> Nosotros</span></a
+						>
+						<a href="../construccion.html"
+							><i class="fa-solid fa-mobile-screen-button"></i
+							><span class="off"> Contacto</span></a
+						>
+						<a href="../ElectroInfo.html#section"
+							><i class="fa-solid fa-newspaper"></i
+							><span class="off"> Noticias</span></a
+						>
+					</nav>
+					<div class="social">
+						<!--Redes Sociales-->
+					</div>
+				</div>
+				<div class="texto-principal margen-interno">
+					<h1>CIRCUITO MIXTO</h1>
+				</div>
+			</header>
+			<section id="section" class="section margen-interno">
+				<div class="articulos">
+					<article class="article">
+						<img src="../IMAGENES/CLASE4/clase4.1.png" alt="" />
+						<br />
+						<h2>Que es el circuito mixto</h2>
+						<br />
+						<p>
+							Los circuitos mixtos son una combinacíon de los circuitos en serie
+							y paralelo. <br />
+							Es decir que no todos los leds van a alumbrar igual. La que está
+							en serie será la que más alumbre, ya que por ella circula toda la
+							intensidad.
+						</p>
+						<br />
+						<h3>Como aplicar ley de Ohm</h3>
+						<br />
+						<p>
+							Para poder aplicar ley de Ohm se debe reducir a una sola
+							resistencia (Req), antes de esto hay que identificar las
+							resistencias que se encuentran en serie y paralelo, simplificarlas
+							por separado, obteniendo la resistencia equivalente de cada caso y
+							finalmente quedar con un circuito serie con una resistencia
+							equivalente a todo el circuito.
+						</p>
+						<br />
+						<h3>Formulas</h3>
+						<p>
+							IT = VT/Req <br />
+							I1 = V1/R1 <br />
+							V1 = IT*R1 <br />
+						</p>
+
+						<h3>Ejemplo</h3>
+						<br />
+						<img src="../IMAGENES/CLASE4/clase4.2.jpg" alt="" />
+						<br />
+						<h4>Paso 1</h4>
+						<p>
+							Lo primero que debemos hacer es hallar la Req entre R2 y R3 <br />
+							Entonces: <br />
+							R23 = 40*10/40+10 <br />
+							R23 = 400/50 <br />
+							R23 = 8Ω <br />
+							<br />
+							Queda algo asi: <br />
+							<img src="../IMAGENES/CLASE4/clase4.3.jpg" alt="" />
+						</p>
+						<br />
+						<h4>Paso 2</h4>
+						<br />
+						<p>
+							Sumamos R23 con R1 para hallar RT <br />
+							<br />
+							RT = 5Ω + 8Ω RT = 13Ω. <br />
+							Ahora hallaremos IT: <br />
+							IT = VT/RT <br />
+							IT = 100/13 IT = 7,69 <a title="Amperios">amp</a>
+							<br />
+							Luego de esto hallaremos los voltajes: <br />
+							<br />
+							V1 = IT*R1 <br />
+							V1 = 7,69*5 <br />
+							V1 = 38,45v <br />
+							<br />
+							Procedemos a hallar el V23
+							<br />
+							<br />
+							V23 = IT*R23 <br />
+							V23 = 7,69*8 <br />
+							V23 = 61,52v
+							<br />
+							<br />
+							Por ultimo hallaremos las corrientes (I):
+							<br />
+							<br />
+							I2 = V2/R2 <br />
+							I2 = 61,52/40 <br />
+							I2 = 1,53 amp <br />
+							<br />
+							I3 = V3/R3 <br />
+							I3 = 61,52/10 <br />
+							I3 = 6,15 amp <br />
+						</p>
+						<br />
+						<h2>EJERCICIOS</h2>
+						<br />
+						<br />
+						<p>Realiza este ejercicio para poner a prueba tu aprendizaje.</p>
+						<img src="../IMAGENES/CLASE4/clase4.4.jpg" alt="" /> <br />
+						<br />
+						<img src="../IMAGENES/CLASE4/clase4.5.jpg" alt="" /> <br />
+						<br />
+						<p>
+							Para la proxima clase necesitaremos cable UTP, Regla,
+							<a
+								target="blanck"
+								href="https://www.loencuentras.com.co/1258-large_default/pela-cables.jpg"
+								>Pelacables</a
+							>,
+							<a target="blanck" href="https://cutt.ly/rGzIBCb"
+								>Soldadura de estaño con resina</a
+							>,
+							<a
+								href="https://ventiapp.blob.core.windows.net/images/3C219AE5/183ab5bc.jpg"
+								>Cautín</a
+							>
+						</p>
+						<br />
+						<a class="siguiente" href="clase3.html"
+							><i class="fa-solid fa-arrow-left-long"></i
+						></a>
+						<a class="siguiente" href="clase5.html"
+							><i class="fa-solid fa-arrow-right-long"></i
+						></a>
+					</article>
+					<nav class="navegacion">
+						<a href="../ElectroInfo.html">Inicio</a>
+						<a href="../clases.html">1</a>
+						<a href="../construccion.html">2</a>
+						<a href="../construccion.html">3</a>
+						<a href="../construccion.html">Final</a>
+					</nav>
+				</div>
+				<aside class="aside">
+					<div class="publicidad">
+						<h4>
+							<a href="../ElectroInfo.html#section">Noticias Recientes</a>
+						</h4>
+						<img src="../IMAGENES/noticias.webp" alt="" />
+					</div>
+					<div class="publicidad">
+						<h4>
+							<a href="clase1.html">Clases Recientes</a>
+						</h4>
+						<img src="../IMAGENES/CLASE1/clase1.jpg" alt="" />
+					</div>
+				</aside>
+			</section>
+			<footer class="footer margen-interno">
+				<nav class="pie">
+					<a href="#instructores">Desarrollado por Jose Martinez</a><br />
+					<a href="#instructores">Instructores</a><br />
+					<a href="../construccion.html">Lic. Cesar Rey</a>
+					<a
+						href="https://www.youtube.com/channel/UCCkLPcwlH2aHSJIo-MUMFhA/videos"
+						target="blank"
+						>Lic. Alvaro Acosta</a
+					>
+				</nav>
+			</footer>
+		</div>
+	</body>
+</html>

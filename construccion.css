@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno{
+    padding: 0 40px;
+}
+    .header{
+        background: url(IMAGENES/enconstruccion.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgba(0,0,0,.2);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .logo a:hover{
+                    color: greenyellow;
+                }
+                .logo a:active{
+                    color: green;
+                }
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color:#fff;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                    padding: 0px 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: greenyellow;
+                }
+                .nav a:active{
+                    color: green;
+                }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 0px 10px;
+                }
+                .social a:hover{
+                    color: greenyellow;
+                }
+                .social a:active{
+                    color: green;
+                }
+            .texto-principal{
+                height: 597px;
+                display: flex;
+                align-items: center;
+            }
+                .texto-principal a{
+                    color: cyan;
+                }
+
+                h1{
+                    font-family: 'Lora', serif;
+                    font-size: 30px;
+                    color: #fff;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 1.6;
+                }
+                .section{
+                    background: #f7f7f7;
+                    display: flex
+                }
+            
+                    .articulos{
+                        background: #f7f7f7;
+                        flex: 2 1 auto;
+                        display: flex;
+                        flex-flow: row wrap;
+                    }
+            
+                    h3{
+                        color: white;
+                        font-size: 15px;
+                        padding: 10px 0px;
+                        margin-top: -70px;
+                    }
+            
+                    h2{
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        padding: 0px 0 10px 0;
+                        color: rgb(0, 0, 0);
+                    }
+                        .article{
+                            flex: 1 1 40%;
+                            color: #444;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            margin: 10px 10px 0px 0;
+                            flex: 1 1 45%;
+                            background: #e2e0e0;
+                        }
+                        .article img{
+                            width: 100%;
+                        }
+            
+                        .article a{
+                            color: #fff;
+                            font-size: 13px;
+                            padding: 10px;
+                            background: #000;
+                            margin: 10px 0px;
+                            display: inline-block;
+                        }
+            
+                        /* .article a:hover{
+                            background: #546cc3;
+                        }
+                        */
+                        .navegacion{
+                            background: #000;
+                            flex: 1 1 100%;
+                            margin: 10px 10px 0 0px;
+                            padding: 5px;
+                        }
+            
+                        .navegacion a{
+                            color: #fff;
+                            font-size: 11px;
+                            text-transform: uppercase;
+                            padding: 0px 10px;
+                            letter-spacing: 1px;
+                        }
+            
+                        .navegacion a:hover{
+                            color: #546cc3;
+                        }
+            
+                    .aside{
+                        flex: 1 1 auto;
+                        margin: 10px 3px 10px 0px;
+                    }        
+                    .aside img{
+                        width: 100%;
+                    }
+            
+                    h4{
+                        background: #fff;
+                        padding: 10px;
+                        text-transform: uppercase;
+                    }
+                        .publicidad{
+                            /* background: #FFF89A; */
+                            background-color: none;
+                        }
+            
+                .footer{
+                    background: #000;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                    padding: 20px 0 0 0;
+                }
+                    .pie{
+                        /* background: #FFD93D; */
+                        text-align: center;
+                        height: 100px;
+                    }
+            
+                    .pie a{
+                        color: white;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        padding: 0px 10px;
+                        letter-spacing: 2px;
+                    }
+                    
+            @media all and (max-width: 1120px){
+                .section{
+                    flex-direction: column;
+                }
+                .menu{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .aside{
+                    display: flex;
+                    justify-content: center;
+                }
+                h1{
+                    font-size: 15px;
+                }
+                .texto-principal{
+                    height: 500px;
+                }
+            }
+            
+            @media all and (max-width: 762px){
+                .articulos{
+                    flex-direction: column;
+                }
+            }
+            
+            @media all and (max-width: 400px){
+                .aside{
+                    flex-direction: column;
+                }
+            }
+            
+            @media all and (max-width: 683px){
+                .off{
+                    display: none;
+                }
+                .nav{
+                    font-size: 25px;
+                }
+            }                
